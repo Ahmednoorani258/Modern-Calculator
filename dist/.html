@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Calculator</title>
+</head>
+<body style="background-image: url('https://images.pexels.com/photos/370717/pexels-photo-370717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') " class="min-h-screen flex items-center justify-center">
+    
+   <div class="bg-opacity-40 absolute inset-0 flex items-center justify-center">
+     <!-- Calculator Goes Here -->
+     <div class="bg- border-2 border-gray-900 shadow-2xl rounded-lg ">
+        <!-- Form Goes Here -->
+    
+        <form class="border-b-2 border-gray-700">
+            
+            <div>
+                <input type="text" id="display" name="display" readonly class="bg-transparent rounded-t-lg p-8 outline-none text-2xl md:text-3xl text-right text-white border-b-2 border-black cursor-pointer">
+            </div>
+            <!-- Button Goes Here -->
+            <div >
+                <div  class="flex justify-center items-center">
+                    <input type="button" value="AC" onclick="display.value =''" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-white">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-white">
+                    <input type="button" value="." onclick="display.value += '.'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+                    <input type="button" value="/" onclick="display.value += '/'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-white">
+                </div>
+                <div  class="flex justify-center items-center">
+                    <input type="button" value="7" onclick="display.value += '7'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+
+                    <input type="button" value="8" onclick="display.value += '8'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+                    
+                    <input type="button" value="9" onclick="display.value += '9'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+                    
+                    <input type="button" value="*" onclick="display.value += '*'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-white">
+                </div>  
+                <div  class="flex justify-center items-center">
+                    <input type="button" value="4" onclick="display.value += '4'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+
+                    <input type="button" value="5" onclick="display.value += '5'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+                    
+                    <input type="button" value="6" onclick="display.value += '6'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+                    
+                    <input type="button" value="-" onclick="display.value += '-' " class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-white">
+                </div>
+                <div  class="flex justify-center items-center">
+                    <input type="button" value="1" onclick="display.value += '1'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+
+                    <input type="button" value="2" onclick="display.value += '2'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+                    
+                    <input type="button" value="3" onclick="display.value += '3'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+                    
+                    <input type="button" value="+" onclick="display.value += '+' " class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-white">
+                </div>
+                <div  class="flex justify-center items-center">
+                    <input type="button" value="00" onclick="display.value += '00'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+                    
+                    <input type="button" value="0" onclick="display.value += '0'" class="outline-none cursor-pointer text-center w-16 h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-emerald-600">
+                    
+                    <input type="button" value="=" onclick="display.value = eval(display.value)" class=" w-[152px] h-16 rounded-lg font-bold text-xl bg-transparent bg-slate-800 m-3 shadow-md border-l-2 border-b-2 border-black shadow-black active:shadow-inner active:border-none text-white">
+                </div>
+            </div>
+        </form>
+    
+    
+        <div>
+        
+        </div>
+ 
+    </div> 
+   </div>
+
+</body>
+</html>
